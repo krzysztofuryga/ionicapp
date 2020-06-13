@@ -23,53 +23,148 @@
 
 <ion-app>
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Header</ion-title>
+    <ion-toolbar color="primary">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-avatar>
+              <img src="../../assets/person.jpg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              Joanna Kowalska
+            </ion-label>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon name="search"></ion-icon>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon name="apps"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
     </ion-toolbar>
   </ion-header>
 
   <ion-content class="ion-padding">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <div class="ion-text-start">
-            <h3>text-start</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="ion-text-end">
-            <h3>text-end</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="ion-text-center">
-            <h3>text-center</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <div class="ion-text-justify">
-            <h3>text-justify</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="ion-text-wrap">
-            <h3>text-wrap</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
-          </div>
-        </ion-col>
-        <ion-col>
-          <div class="ion-text-nowrap">
-            <h3>text-nowrap</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-card>
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar>
+            <img src="../../assets/person.jpg">
+          </ion-avatar>
+          <!-- <ion-icon name="person-circle-outline" slot="start"></ion-icon> -->
+          <ion-label>
+            Joanna Kowalska
+          </ion-label>
+          <ion-icon name="ellipsis-vertical-outline" slot="end"></ion-icon>
+        </ion-item>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile.
+        <img src="../../assets/city.jpg" alt="">
+      </ion-card-content>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="like">
+              <ion-label>Like</ion-label>
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="comment">
+              <ion-label>Comment</ion-label>
+              <ion-icon name="document-text-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="share">
+              <ion-label>Share</ion-label>
+              <ion-icon name="arrow-redo-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar>
+            <img src="../../assets/person.jpg">
+          </ion-avatar>
+          <!-- <ion-icon name="person-circle-outline" slot="start"></ion-icon> -->
+          <ion-label>
+            Joanna Kowalska
+          </ion-label>
+          <ion-icon name="ellipsis-vertical-outline" slot="end"></ion-icon>
+        </ion-item>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile.
+        <img src="../../assets/city.jpg" alt="">
+      </ion-card-content>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="like">
+              <ion-label>Like</ion-label>
+              <ion-icon name="thumbs-up-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="comment">
+              <ion-label>Comment</ion-label>
+              <ion-icon name="document-text-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col class="ion-align-self-start">
+            <ion-tab-button tab="share">
+              <ion-label>Share</ion-label>
+              <ion-icon name="arrow-redo-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
   </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Footer</ion-title>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="home">
+            <ion-icon name="home" color="primary"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="people">
+            <ion-icon name="people" color="primary"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="message">
+            <ion-icon name="document-text" color="primary"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="notifications">
+            <ion-icon name="notifications" color="primary"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="jobsearch">
+            <ion-icon name="briefcase" color="primary"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
